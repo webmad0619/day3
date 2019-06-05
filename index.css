@@ -1,0 +1,62 @@
+/* li {
+    color: black;
+}
+
+ul > li {
+    color: red;
+}
+
+span {
+    color: black;
+}
+
+div>span {
+    color: red;
+} */
+
+/* ol li {
+    color: red;
+} */
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: left center;
+    padding-left: 15px;
+    display: block;
+}
+
+nav a:hover{
+    color: green;
+    transition: all 0.5s;
+}
+
+nav a[href*="hack"] {
+    background-image: url("https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/4017/s300/logo-ironhack-blue.png");
+}
+/* nav a[href*="hack"]:hover {
+    transform: translate(100px) rotate(20deg);
+} */
+
+nav a[href*="amazon"] {
+    background-image: url("https://pmcvariety.files.wordpress.com/2018/01/amazon-logo.jpg?w=1000&h=562&crop=1");
+}
+
+/* nav a[href="http://www.amazon.com/test2"] {
+    background-color: green;
+} */
