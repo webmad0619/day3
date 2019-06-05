@@ -1,0 +1,123 @@
+html {
+    font-size: 10px;
+}
+
+div.hidden {
+    display: none;
+}
+
+section {
+    padding: 1rem;
+    max-width: 128rem;
+    min-width: 36rem;
+    margin: auto;
+}
+
+.btn {
+    padding: 2rem 1rem;
+    font-size: 2rem;
+}
+
+.btn.inverted {
+    background: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    height: 5.5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header h2 {
+    font-size: 3rem;
+}
+
+header nav,
+header .btn {
+    display: none;
+}
+
+header .nav-switch {
+    display: block;
+    font-size: 4rem;
+}
+
+.tagline {
+    font-size: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 50rem;
+    line-height: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tagline span {
+    color: grey;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio li {
+    flex-grow: 1;
+}
+
+.portfolio img{
+    width: 95vw;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    header nav,
+    header .btn {
+        display: block;
+    }
+
+    header h2 {
+        font-size: 3.5rem;
+    }
+
+    header nav ul {
+        display: flex;
+        font-size: 2.4rem;
+    }
+
+    header nav li {
+        margin-right: 1rem;
+    }
+
+    /* pseudo selector :last-child */
+    header nav li:last-child {
+        margin-right: 0;
+    }
+
+    header .nav-switch {
+        display: none;
+    }
+
+    .tagline {
+        font-size: 4rem;
+    }
+
+    .portfolio img{
+        width: 46vw;
+        margin: 1rem;
+    }
+
+    .portfolio img.big{
+        width: 95vw;
+    }
+}
